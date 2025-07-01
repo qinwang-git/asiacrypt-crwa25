@@ -81,6 +81,19 @@ th,td{
 .top-left {font-size:4.2em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 91px; position: absolute; padding: 20px 0 0 0; top: 0px; line-height: 1.1em;}
 .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
+/* Conference Info on Banner */
+.conference-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.8em;
+    color: #fafafa;
+    line-height: 1.4em;
+    text-align: right;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 0px 4px #000000;
+}
+
 /* Conference Title Logo */
 .title1{color: #f7931a;} 
 .title2{color: #9c27b0;}
