@@ -75,8 +75,8 @@
         <tr>
             <td></td>
             <td>
-                <strong>Presenter:</strong> Qin Wang (CSRIO Data61)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <strong>Presenter:</strong> Qin Wang (CSIRO Data61)<br>
+                <div class="abstract-content">
                     <strong>Abstract:</strong> Voting methods weighted by stakes are the baseline governance paradigm in Proof-of-Stake (PoS) blockchains. Such a paradigm may easily lead to distortions: a few users possessing an overwhelming stake amount may potentially fully control the process, even without owning the totality of the stakes. We study this problem through the lens of computational social choice and with a focus on the voting method used in Project Catalyst. We measure users' voting power by the Banzhaf power index, and investigate the issue of generating voting powers that are proportional to users' stakes. We contribute analytical and empirical results. Analytically, we observe that this is impossible in general but that proportionality can be approximated in expectation, albeit under restrictive assumptions over how stakes are randomly distributed.
                 </div>
             </td>
@@ -97,14 +97,14 @@
             <td></td>
             <td>
                 <strong>Speaker:</strong> Chuangqi Zhang (University of Technology Sydney)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <div class="abstract-content">
                     <strong>Abstract:</strong> We provide a generic construction of blind signatures from cryptographic group actions following the framework of the blind signature CSIOtter introduced by Katsumata et al. (CRYPTO'23) in the context of isogeny (commutative group action). We adapt and modify that framework to make it work even for non-commutative group actions. As a result, we obtain a blind signature from abstract group actions which are proven to be secure in the random oracle model. We also propose an instantiation based on a variant of monomial code equivalence, interpreted as a symmetric group action.
                 </div>
             </td>
         </tr>
     </table>
 
-    <!-- 10:00-10:30 Talk -->
+    <!-- 10:00-10:40 Talk -->
     <table class="special-event">
         <tr>
             <td class="date">
@@ -118,7 +118,7 @@
             <td></td>
             <td>
                 <strong>Speaker:</strong> Yu Shen (University of Edinburgh)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <div class="abstract-content">
                     <strong>Abstract:</strong> Nakamoto Consensus (i.e., the underlying consensus layer of Bitcoin) is of strong theoretical interest in terms of offering an ever-lasting, large-scale and permissionless computing service, which turns out to be challenging in the classical setting. Yet, despite its unprecedented features, Nakamoto Consensus still suffers from significant security and performance bottlenecks in terms of transaction order fairness: The system bears ephemeral centralization at the point of block production, creating opportunities for the adversary to seek profit by unfairly ordering transactions and adaptively injecting new ones (e.g. front-running / MEV attacks).<br><br>In this talk, we focus on blockchain order fairness in terms of transaction serialization, considering both the temporal and causal aspects. Regarding the temporal aspect, we propose the most refined notion of receiver order fairness which we term bounded unfairness; we also explore the complexity of realizing it. Then, we capture both sender and receiver order fairness in the Universal-Composability framework. We build two permissionless protocols assuring input causality. The first protocol, utilizing trusted hardware, allows clients to encrypt transactions which will be decrypted after a pre-determined period of time, measured by the blockchain progression. The second protocol, while achieving the same functionality, obviates the need for hardware enclaves and employs ephemeral committees that send only one message thus achieving input causality alongside adaptive security.
                 </div>
             </td>
@@ -152,35 +152,35 @@
             <td></td>
             <td>
                 <strong>Presenter:</strong> Qiyuan Gao (Beihang University)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <div class="abstract-content">
                     <strong>Abstract:</strong> Blockchain scalability is fundamentally constrained by redundant verification and excessive on-chain computation. Existing off-chain schemes, such as optimistic rollups, suffer from high latency, multi-round challenges, and weak verifier participation. To address these limitations, we present SideGAP, a sidechain-based framework that enables fast and verifiable off-chain computation with minimal main-chain overhead. SideGAP maintains intermediate execution states, allowing verifiers to directly retrieve any transaction-level snapshot for one-step verification, thereby eliminating multi-round interaction. To further mitigate the verifier's dilemma, SideGAP introduces a verifiable workload proof that binds each endorsement to measurable Gas expenditure, ensuring fairness and deterring free-riding.
                 </div>
             </td>
         </tr>
     </table>
 
-    <!-- 11:20-12:00 Talk -->
+    <!-- 11:20-12:00 Talk - 新增Yi Chen -->
     <table class="special-event">
         <tr>
             <td class="date">
                 11:20 &ndash; 12:00
             </td>
             <td class="title-special">
-                <span class="session-type talk">Invited talk:</span>Understanding and Detecting Money Laundering on Blockchain
+                <span class="session-type talk">Invited talk:</span>Delving into Cryptanalytic Extraction of PReLU Neural Networks
             </td>
         </tr>
         <tr>
             <td></td>
             <td>
-                <strong>Speaker:</strong> Qishuang Fu (Monash University)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
-                    <strong>Abstract:</strong> The anonymity and limited regulatory oversight of blockchain have made it a hotspot for criminal activities and money laundering. By routing illicit funds through complex chains of transactions, laundering obscures their origins and creates significant challenges for forensic investigation. Today, on-chain anti-money laundering faces four major challenges: scarce data, hidden behaviors, organized laundering groups, and increasingly diverse laundering strategies. This talk presents a technical roadmap that spans data construction, risk assessment, group analysis, and multi-strategy detection.<br><br>We begin by addressing data scarcity with a taint-analysis–based tracing framework that constructs the first laundering dataset on Ethereum, making real-world laundering patterns visible on chain. To handle hidden laundering accounts and scarce labels, we develop an unsupervised risk assessment method that uses suspiciousness indicators and network propagation to identify high-risk accounts. We further reveal the organized nature of laundering by applying dense-subgraph mining and max-flow analysis to detect laundering groups. Finally, we introduce a semantics–structure fusion framework that detects a wide range of laundering strategies and produces suspicious activity reports. Together, these four components offer a coherent and effective approach to advancing on-chain anti–money laundering.
+                <strong>Speaker:</strong> Yi Chen (Tsinghua University)<br>
+                <div class="abstract-content">
+                    <strong>Abstract:</strong> The machine learning problem of model extraction was first introduced in 1991 and gained prominence as a cryptanalytic challenge starting with Crypto 2020. For over three decades, research in this field has primarily focused on ReLU-based neural networks. In this talk, I will introduce our work published at ASIACRYPT 2025. In this work, we take the first step towards the cryptanalytic extraction of PReLU neural networks, which employ more complex nonlinear activation functions than their ReLU counterparts.
                 </div>
             </td>
         </tr>
     </table>
 
-    <!-- 12:00-12:30 Talk -->
+    <!-- 12:00-12:40 Talk - 原来的Yu Xia -->
     <table class="special-event">
         <tr>
             <td class="date">
@@ -194,14 +194,14 @@
             <td></td>
             <td>
                 <strong>Speaker:</strong> Yu Xia (Technical University of Denmark)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <div class="abstract-content">
                     <strong>Abstract:</strong> A t-out-of-n robust non-interactive zero-knowledge (NIZK) combiner is a construction that, given access to n candidate instantiations of a NIZK for some language, itself implements a NIZK for the same language. Moreover, the combiner is secure assuming at least t of the given candidates are secure. We provide different constructions of robust NIZK combiners. In particular, we show how to obtain: A black-box combiner working for a special class of homomorphic languages where n, t are polynomial and t > ⌊n/2⌋. A non-black-box combiner working for any language, where n, t are constant and t > ⌊n/2⌋. A non-black-box combiner working for any language, where n, t are polynomial and t > ⌊2n/3⌋. On the negative side, we show that no (even non-black-box) robust NIZK combiner exists assuming t ≤ ⌊n/2⌋ (unless the polynomial hierarchy collapses).
                 </div>
             </td>
         </tr>
     </table>
 
-    <!-- Lunch Break -->
+    <!-- Lunch Break - 时间不变 -->
     <table class="special-event break-event">
         <tr>
             <td class="date">
@@ -214,7 +214,7 @@
         </tr>
     </table>
 
-    <!-- 13:30-13:50 Paper -->
+    <!-- 13:30-13:50 Paper - 时间不变 -->
     <table class="special-event">
         <tr>
             <td class="date">
@@ -228,18 +228,39 @@
             <td></td>
             <td>
                 <strong>Presenter:</strong> Yuexin Xiang (Monash University)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <div class="abstract-content">
                     <strong>Abstract:</strong> Memecoins, emerging from internet culture and community-driven narratives, have rapidly evolved into a unique class of crypto assets. Unlike technology-driven cryptocurrencies, their market dynamics are primarily shaped by viral social media diffusion, celebrity influence, and speculative capital inflows.<br><br>To capture the distinctive vulnerabilities of these ecosystems, we present the first Memecoin Ecosystem Fragility Framework (ME2F). ME2F formalizes memecoin risks in three dimensions: i) Volatility Dynamics Score capturing persistent and extreme price swings together with spillover from base chains; ii) Whale Dominance Score quantifying ownership concentration among top holders; and iii) Sentiment Amplification Score measuring the impact of attention-driven shocks on market stability. We apply ME2F to representative tokens (over 65% market share).
                 </div>
             </td>
         </tr>
     </table>
 
-    <!-- 13:50-14:30 Talk -->
+    <!-- 13:50-14:30 Talk - Qishuang移到这里 -->
     <table class="special-event">
         <tr>
             <td class="date">
                 13:50 &ndash; 14:30
+            </td>
+            <td class="title-special">
+                <span class="session-type talk">Invited talk:</span>Understanding and Detecting Money Laundering on Blockchain
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <strong>Speaker:</strong> Qishuang Fu (Monash University)<br>
+                <div class="abstract-content">
+                    <strong>Abstract:</strong> The anonymity and limited regulatory oversight of blockchain have made it a hotspot for criminal activities and money laundering. By routing illicit funds through complex chains of transactions, laundering obscures their origins and creates significant challenges for forensic investigation. Today, on-chain anti-money laundering faces four major challenges: scarce data, hidden behaviors, organized laundering groups, and increasingly diverse laundering strategies. This talk presents a technical roadmap that spans data construction, risk assessment, group analysis, and multi-strategy detection.<br><br>We begin by addressing data scarcity with a taint-analysis–based tracing framework that constructs the first laundering dataset on Ethereum, making real-world laundering patterns visible on chain. To handle hidden laundering accounts and scarce labels, we develop an unsupervised risk assessment method that uses suspiciousness indicators and network propagation to identify high-risk accounts. We further reveal the organized nature of laundering by applying dense-subgraph mining and max-flow analysis to detect laundering groups. Finally, we introduce a semantics–structure fusion framework that detects a wide range of laundering strategies and produces suspicious activity reports. Together, these four components offer a coherent and effective approach to advancing on-chain anti–money laundering.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- 14:30-15:10 Talk - Hanwen移到这里 -->
+    <table class="special-event">
+        <tr>
+            <td class="date">
+                14:30 &ndash; 15:10
             </td>
             <td class="title-special">
                 <span class="session-type talk">Invited talk:</span>XXX
@@ -248,16 +269,16 @@
         <tr>
             <td></td>
             <td>
-                <strong>Speaker:</strong> Hanwen Feng (University of Sydney) </strong> 
+                <strong>Speaker:</strong> Hanwen Feng (University of Sydney)
             </td>
         </tr>
     </table>
 
-    <!-- 14:30-15:00 Talk -->
+    <!-- 15:10-15:50 Talk - Saber延后40分钟 -->
     <table class="special-event">
         <tr>
             <td class="date">
-                14:30 &ndash; 15:10
+                15:10 &ndash; 15:50
             </td>
             <td class="title-special">
                 <span class="session-type talk">Invited talk:</span>PoLO: Proof-of-Learning and Proof-of-Ownership at Once with Chained Watermarking
@@ -267,18 +288,18 @@
             <td></td>
             <td>
                 <strong>Speaker:</strong> Saber Yu (University of Technology Sydney)<br>
-                <div style="background-color: #f5f5f5; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                <div class="abstract-content">
                     <strong>Abstract:</strong> Machine learning models are increasingly shared and outsourced, raising requirements of verifying training effort (Proof-of-Learning, PoL) to ensure claimed performance and establishing ownership (Proof-of-Ownership, PoO) for transactions. When models are trained by untrusted parties, PoL and PoO must be enforced together to enable protection, attribution, and compensation. However, existing studies typically address them separately, which not only weakens protection against forgery and privacy breaches but also leads to high verification overhead.<br><br>We propose PoLO, a unified framework that simultaneously achieves PoL and PoO using chained watermarks. PoLO splits the training process into fine-grained training shards and embeds a dedicated watermark in each shard. Each watermark is generated using the hash of the preceding shard, certifying the training process of the preceding shard. The chained structure makes it computationally difficult to forge any individual part of the whole training process. The complete set of watermarks serves as the PoL, while the final watermark provides the PoO. PoLO offers more efficient and privacy-preserving verification compared to the vanilla PoL solutions that rely on gradient-based trajectory tracing and inadvertently expose training data during verification, while maintaining the same level of ownership assurance of watermark-based PoO schemes.
                 </div>
             </td>
         </tr>
     </table>
 
-    <!-- Afternoon Coffee Break -->
+    <!-- Afternoon Coffee Break - 调整时间 -->
     <table class="special-event break-event">
         <tr>
             <td class="date">
-                15:10 &ndash; 15:30
+                Anytime after 15:00
             </td>
             <td class="title-special">
                 ☕ Afternoon Coffee Break 🍪<br>
