@@ -161,6 +161,7 @@ td.title-special {
     color: #52739e;
     font-size: 120%;
     font-weight: bold;
+    text-shadow: none;
 }
 td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
 td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
@@ -200,6 +201,7 @@ footer{font-size:0.875em; margin-top:3em; text-align:center;}
     text-decoration: underline !important;
 }
 
+/* Session type labels */
 .session-type {
     font-size: 90%;
     font-weight: normal;
@@ -221,6 +223,7 @@ footer{font-size:0.875em; margin-top:3em; text-align:center;}
     border: 1px solid #c8e6b8;
 }
 
+/* Break event styling */
 .break-event {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border: 1px dashed #8fa8b8;
@@ -243,7 +246,7 @@ footer{font-size:0.875em; margin-top:3em; text-align:center;}
     vertical-align: middle;
 }
 
-/* 确保所有表格对齐 */
+/* Ensure all tables align properly */
 .special-event {
     width: 100%;
     margin-bottom: 15px;
